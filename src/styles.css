@@ -1,0 +1,77 @@
+body {
+  padding: 20px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+p {
+  margin: 0;
+}
+
+.container {
+  background: linear-gradient(
+    121deg,
+    rgba(155, 76, 200, 0.7) 40%,
+    rgba(203, 47, 162, 0.7) 83%
+  );
+  padding: 20px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+form {
+  margin-bottom: 20px;
+}
+.current-block {
+  margin: 0 12px;
+}
+
+i {
+  font-size: 30px;
+}
+.main-icon {
+  font-size: 106px;
+}
+.current-temperature {
+  font-size: 40px;
+  font-weight: 600;
+}
+.wrap {
+  border: 1px solid white;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  padding: 0 10px 10px;
+}
+.input-wrapper {
+  margin: 20px auto;
+  width: 75%;
+  align-items: end;
+}
+
+.btn-primary {
+  font-family: inherit;
+  --bs-btn-font-weight: 500;
+  --bs-btn-color: white;
+  --bs-btn-bg: rgba(155, 76, 200, 0.8);
+  --bs-btn-border-color: rgba(155, 76, 200, 1);
+  --bs-btn-hover-color: rgba(155, 76, 200, 0.9);
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: rgba(155, 76, 200, 1);
+  --bs-btn-focus-shadow-rgb: rgba(155, 76, 200, 0.9);
+  --bs-btn-active-color: rgba(155, 76, 200, 0.9);
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: rgba(155, 76, 200, 1);
+}
+
+.upper-colon {
+  font-size: 15px;
+  font-weight: 500;
+  vertical-align: super;
+}
+.degree-system:hover {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+}
