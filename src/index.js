@@ -50,14 +50,26 @@ searchFormEl.addEventListener("submit", onSearchFormSubmit);
 const celsiusEl = document.querySelector("#celsius");
 const fahrenheitEl = document.querySelector("#fahrenheit");
 const currentTempEl = document.querySelector("#current-temp");
+const minTempEl = document.querySelector("#min-temp");
+const maxTempEl = document.querySelector("#max-temp");
+
 let temperature = 22;
+let minTemperature = 18;
+let maxTemperature = 25;
+currentTempEl.innerHTML = temperature;
+minTempEl.innerHTML = minTemperature;
+maxTempEl.innerHTML = maxTemperature;
 
 function changeInCelsius(e) {
   currentTempEl.innerHTML = temperature;
+  minTempEl.innerHTML = minTemperature;
+  maxTempEl.innerHTML = maxTemperature;
 }
 
 function changeInFahrenheit(e) {
-  currentTempEl.innerHTML = `${(temperature * 9) / 5 + 32}`;
+  currentTempEl.innerHTML = Math.round(`${(temperature * 9) / 5 + 32}`);
+  minTempEl.innerHTML = Math.round(`${(minTemperature * 9) / 5 + 32}`);
+  maxTempEl.innerHTML = Math.round(`${(maxTemperature * 9) / 5 + 32}`);
 }
 
 celsiusEl.addEventListener("click", changeInCelsius);
