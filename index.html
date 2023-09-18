@@ -22,13 +22,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
 
   <body>
     <div class="container text-center">
       <div class="wrap main-wrap">
         <form class="row input-wrapper" id="search-form">
-          <div class="col">
+          <div class="col-6">
             <input
               type="text"
               class="col form-control"
@@ -36,8 +37,13 @@
               placeholder="Enter city name"
             />
           </div>
-          <div class="col">
+          <div class="col-3">
             <input type="submit" class="btn btn-primary" value="Search" />
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-primary" id="current-location">
+              Current
+            </button>
           </div>
         </form>
         <ul class="row current-block">
