@@ -84,6 +84,7 @@ function onSearchFormSubmit(e) {
   }
   currentCityEl.innerHTML = currentCityName.value;
   searchTemperature(currentCityName.value);
+  currentCityName.value = "";
 }
 
 searchFormEl.addEventListener("submit", onSearchFormSubmit);
